@@ -5,38 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Menus</title>
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="dropdown">
-      <button onclick="newDropDown()" class="newsDown">News</button>
-      <div id="myNewsDropDowns" hidden>
-        <a href="#">News 1</a>
-        <a href="#">News 2</a>
-        <a href="#">News 3</a>
+    <div id="menus">
+      <div class="dropdown">
+        <button onclick="newsDropDown()" class="dropdown">News</button>
+        <div id="myNewsDropDowns" hidden>
+          <a href="#">News 1</a>
+          <a href="#">News 2</a>
+          <a href="#">News 3</a>
+        </div>
       </div>
-    </div>
-    <div class="dropdown">
-      <button onclick="videoDropDown()" class="dropDown">Vidoes</button>
-      <div id="myVideoDropdowns" hidden>
-        <a href="#">Video 1</a>
-        <a href="#">Video 2</a>
-        <a href="#">Video 3</a>
+      <div class="dropdown">
+        <button onclick="videoDropDown()" class="dropDown">Videos</button>
+        <div id="myVideoDropdowns" hidden>
+          <a href="#">Video 1</a>
+          <a href="#">Video 2</a>
+          <a href="#">Video 3</a>
+        </div>
       </div>
-    </div>
-    <div class="dropdown">
-      <button onclick="photoDropDown()" class="dropDown">Photos</button>
-      <div id="myPhotoDropdowns" hidden>
-        <a href="#">Photo 1</a>
-        <a href="#">Photo 2</a>
-        <a href="#">Photo 3</a>
+      <div class="dropdown">
+        <button onclick="photoDropDown()" class="dropDown">Photos</button>
+        <div id="myPhotoDropdowns" hidden>
+          <a href="#">Photo 1</a>
+          <a href="#">Photo 2</a>
+          <a href="#">Photo 3</a>
+        </div>
       </div>
-    </div>
-    <div class="dropdown">
-      <button onclick="chatDropDown()" class="dropDown">Chat</button>
-      <div id="myChatDropdowns" hidden>
-        <a href="#">Chat 1</a>
-        <a href="#">Chat 2</a>
-        <a href="#">Chat 3</a>
+      <div class="dropdown">
+        <button onclick="chatDropDown()" class="dropDown">Chat</button>
+        <div id="myChatDropdowns" hidden>
+          <a href="#">Chat 1</a>
+          <a href="#">Chat 2</a>
+          <a href="#">Chat 3</a>
+        </div>
       </div>
     </div>
   </body>
