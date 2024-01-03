@@ -9,38 +9,37 @@
   </head>
   <body>
     <div id="menus">
-      <div class="dropdown">
-        <button onclick="newsDropDown()" class="dropdown">News</button>
-        <div id="myNewsDropDowns" hidden>
-          <a href="#">News 1</a>
-          <a href="#">News 2</a>
-          <a href="#">News 3</a>
-        </div>
+    <div class="dropdown">
+      <button onclick="toggleMenus(this)" class="dropbtn">News</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">News 1</a>
+        <a href="#">News 2</a>
+        <a href="#">News 3</a>
       </div>
-      <div class="dropdown">
-        <button onclick="videoDropDown()" class="dropDown">Videos</button>
-        <div id="myVideoDropdowns" hidden>
+    </div>
+    <div class="dropdown">
+        <button onclick="toggleMenus(this)" class="dropbtn">Videos</button>
+        <div id="myDropdown" class="dropdown-content">
           <a href="#">Video 1</a>
           <a href="#">Video 2</a>
           <a href="#">Video 3</a>
         </div>
       </div>
       <div class="dropdown">
-        <button onclick="photoDropDown()" class="dropDown">Photos</button>
-        <div id="myPhotoDropdowns" hidden>
+        <button onclick="toggleMenus(this)" class="dropbtn">Photos</button>
+        <div id="myDropdown" class="dropdown-content">
           <a href="#">Photo 1</a>
           <a href="#">Photo 2</a>
           <a href="#">Photo 3</a>
         </div>
       </div>
       <div class="dropdown">
-        <button onclick="chatDropDown()" class="dropDown">Chat</button>
-        <div id="myChatDropdowns" hidden>
+        <button onclick="toggleMenus(this)" class="dropbtn">Chat</button>
+        <div id="myDropdown" class="dropdown-content">
           <a href="#">Chat 1</a>
           <a href="#">Chat 2</a>
           <a href="#">Chat 3</a>
         </div>
       </div>
-    </div>
-  </body>
+    </div> 
 </html>
