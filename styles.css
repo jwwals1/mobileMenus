@@ -3,13 +3,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr
 }
 
+
 button {
     background-color: black;
     color: white;
     border: 0px;
     padding: 7px;
+} 
+
+.dropdown-content {
+    display: none;
 }
 
-/* #myNewsDropDowns, #myVideoDropdowns, #myPhotoDropdowns, #myChatDropdowns {
-   display: none;
-} */
+.show {display: grid;}
