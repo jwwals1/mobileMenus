@@ -1,16 +1,14 @@
-function toggleMenus(a) {
-    a.parentNode.getElementsByClassName('dropdown-content')[0].classList.toggle('show')
-}
+function toggleMenus(element) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName('dropdown-content');
+    let thisDropdown = element.nextSibling.nextSibling
+
+    if (!thisDropdown.classList.contains('show')) {
         let i;
         for (i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show')
-            }
+            dropdowns[i].classList.remove('show')
         }
     }
+    thisDropdown.classList.toggle('show')
 }
+ 
